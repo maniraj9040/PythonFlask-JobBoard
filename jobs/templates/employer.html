@@ -12,12 +12,12 @@
 
   <h2>Reviews</h2>
     
-    {% for review in reviews %}
+    {% for review in reviews: %}
     
     <div class="box">
       <article class="media">
         <div class="media-left">
-          {% for _ in range(0,review['ratings'] %}
+          {% for _ in range(0,review['ratings']): %}
           <span class='fa fa-star checked'></span>
           {% endfor %}
         </div>
